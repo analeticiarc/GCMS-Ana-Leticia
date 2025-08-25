@@ -31,8 +31,16 @@ public class HomeController {
         return "Hello, I am Ana Leticia! I live in Brazil.";
     }
 
+
+    @RequestMapping("/hotfix")
+    public @ResponseBody
+    String hotfix() {
+        return "This is a hotfix endpoint.";
+    }
+
     @RequestMapping("/AnaLeticia/hobby")
     public @ResponseBody
     String greetingAnaLeticiaHobby() {return "Hello, I am Ana Leticia! My hobby is painting.";}
+
 
 }
