@@ -57,6 +57,8 @@ class WebAppApplicationTests {
                 .andDo(print()).andExpect(status().isOk())
                 .andExpect(content()
                         .string(containsString("This is a hotfix endpoint.")));
+    }
+
     @Test
     public void shouldReturnMessageForAnaLeticiaHobby() throws Exception {
         this.mockMvc.perform(get("/AnaLeticia/hobby"))
