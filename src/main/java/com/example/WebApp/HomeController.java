@@ -25,5 +25,10 @@ public class HomeController {
         return "Hello, I am Ana Leticia! I am 19 years old.";
     }
 
+    @RequestMapping("/AnaLeticia/location")
+    public @ResponseBody
+    String greetingAnaLeticiaLocation() {
+        return "Hello, I am Ana Leticia! I live in Brazil.";
+    }
 
 }
