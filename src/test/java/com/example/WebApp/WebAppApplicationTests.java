@@ -49,4 +49,13 @@ class WebAppApplicationTests {
                 .andExpect(content()
                         .string(containsString("Hello, I am Ana Leticia! I live in Brazil.")));
     }
+
+    @Test
+    public void shouldReturnMessageForAnaLeticiaHobby() throws Exception {
+        this.mockMvc.perform(get("/AnaLeticia/hobby"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content()
+                        .string(containsString("Hello, I am Ana Leticia! My hobby is painting.")));
+    }
+
 }

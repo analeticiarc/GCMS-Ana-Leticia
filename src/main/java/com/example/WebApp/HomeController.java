@@ -31,4 +31,8 @@ public class HomeController {
         return "Hello, I am Ana Leticia! I live in Brazil.";
     }
 
+    @RequestMapping("/AnaLeticia/hobby")
+    public @ResponseBody
+    String greetingAnaLeticiaHobby() {return "Hello, I am Ana Leticia! My hobby is painting.";}
+
 }
