@@ -41,5 +41,4 @@ class WebAppApplicationTests {
                 .andExpect(content()
                         .string(containsString("Hello, I am Ana Leticia! I am 19 years old.")));
     }
-
 }
