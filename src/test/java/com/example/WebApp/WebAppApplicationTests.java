@@ -34,4 +34,12 @@ class WebAppApplicationTests {
                         .string(containsString("Hello, Ana Leticia!")));
     }
 
+    @Test
+    public void shouldReturnMessageForAnaLeticiaAge() throws Exception {
+        this.mockMvc.perform(get("/AnaLeticia/age"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content()
+                        .string(containsString("Hello, I am Ana Leticia! I am 19 years old.")));
+    }
+
 }

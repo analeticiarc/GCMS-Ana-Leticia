@@ -19,4 +19,11 @@ public class HomeController {
         return "Hello, Ana Leticia!";
     }
 
+    @RequestMapping("/AnaLeticia/age")
+    public @ResponseBody
+    String greetingAnaLeticiaAge() {
+        return "Hello, I am Ana Leticia! I am 19 years old.";
+    }
+
+
 }
