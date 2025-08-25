@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -49,4 +50,13 @@ class WebAppApplicationTests {
                 .andExpect(content()
                         .string(containsString("Hello, I am Ana Leticia! I live in Brazil.")));
     }
+
+    @Test
+    public void shouldReturnMessageForHotfix() throws Exception {
+        this.mockMvc.perform(get("/hotfix"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content()
+                        .string(containsString("This is a hotfix endpoint.")));
+    }
+
 }
