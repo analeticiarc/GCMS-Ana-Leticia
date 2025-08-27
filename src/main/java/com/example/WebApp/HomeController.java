@@ -41,7 +41,7 @@ public class HomeController {
     @RequestMapping("/AnaLeticia/hobby")
     public @ResponseBody
     String greetingAnaLeticiaHobby() {
-        return "Hello, I am Ana Leticia! My hobby is painting";
+        return "Hello, I am Ana Leticia! My hobby is painting.";
     }
 
 
