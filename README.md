@@ -1,9 +1,7 @@
-# GCMS-Ana-Leticia
-Repositório de Ana Letícia para turma de GCMS do IFPE-Recife, 2025.1
---------------------------------------------------------------------
-Colaboradores
+# GCMS-2025-1
+Repositório de Ana Letícia para turma de GCMS do IFPE-Recife, 2025.1!
+
+## Colaboradores
 Coloque seu nome abaixo se você é um dos colaboradores do repositório:
-
-Ana Letícia Ribeiro (@analeticiarc, dona)
-Ramide Dantas (@ramidedantas)
-
+* Ana Letícia Ribeiro (@analeticiarc, dona)
+* Ramide Augusto Sales Dantas (@ramidedantas)
